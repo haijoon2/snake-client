@@ -29,7 +29,6 @@ const connect = function() {
         conn.write("Move: right");
       }, 150);
     }, 3000);
-
   });
 
   conn.on("data", (data) => {
