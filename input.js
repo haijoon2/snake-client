@@ -14,13 +14,13 @@ const handleUserInput = function(key) {
     process.exit();
   }
   if (key === 'w' || key === 'W') {
-    sendMovementToServer("Move: up");
+    sendMovementToServer("up");
   } else if (key === 'a' || key === 'A') {
-    sendMovementToServer("Move: left");
+    sendMovementToServer("left");
   } else if (key === 's' || key === 'S') {
-    sendMovementToServer("Move: down");
+    sendMovementToServer("down");
   } else if (key === 'd' || key === 'D') {
-    sendMovementToServer("Move: right");
+    sendMovementToServer("right");
   } else if (key === '1') {
     connection.write("Say: Hello");
   } else if (key === '2') {
