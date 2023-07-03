@@ -12,6 +12,8 @@ Before you can run this client, you will need to be running the server side whic
 
 
 ## Final Product
+<img width="1217" alt="Screenshot 2023-07-02 at 6 37 23 PM" src="https://github.com/haijoon2/snake-client/assets/123721813/ccc7763e-313c-425f-9361-6dfe8c8f5bc1">
+<img width="1226" alt="Screenshot 2023-07-02 at 6 38 53 PM" src="https://github.com/haijoon2/snake-client/assets/123721813/86d0d2c1-579b-4eb4-83db-a3c157320594">
 
 
 
