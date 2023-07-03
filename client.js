@@ -13,31 +13,9 @@ const connect = function() {
   conn.on("connect", () => {
     console.log("Connection established.");
     conn.write("Name: HJK");
-
-    setInterval(() => {
-      conn.write("Move: up");
-
-      setTimeout(() => {
-        conn.write("Move: down");
-      }, 50);
-
-      setTimeout(() => {
-        conn.write("Move: left");
-      }, 100);
-
-      setTimeout(() => {
-        conn.write("Move: right");
-      }, 150);
-    }, 3000);
   });
 
   conn.on("data", (data) => {
     console.log(`The server says: ${data}`);
   });
-
-  return conn;
-};
-
-module.exports = {
-  connect
 };
