@@ -1,30 +1,42 @@
+let connection;
+let interval;
+
+const sendMovementToServer = (movement) => {
+  clearInterval(interval);
+  interval = setInterval(() => {
+    connection.write(`Move: ${movement}`);
+  }, 50);
+};
+
 const handleUserInput = function(key) {
   if (key === '\u0003') {
     console.log("Disconnecting...");
     process.exit();
   }
   if (key === 'w' || key === 'W') {
-    console.log("Move: up");
+    sendMovementToServer("Move: up");
   } else if (key === 'a' || key === 'A') {
-    console.log("Move: left");
+    sendMovementToServer("Move: left");
   } else if (key === 's' || key === 'S') {
-    console.log("Move: down");
+    sendMovementToServer("Move: down");
   } else if (key === 'd' || key === 'D') {
-    console.log("Move: right");
+    sendMovementToServer("Move: right");
   } else if (key === '1') {
-    console.log("Say: Hello");
+    connection.write("Say: Hello");
   } else if (key === '2') {
-    console.log("Say: How are you doing?");
+    connection.write("Say: How are you doing?");
   } else if (key === '3') {
-    console.log("Say: Oh no, you got me!");
+    connection.write("Say: Oh no, you got me!");
   } else if (key === '4') {
-    console.log("Say: Catch me if you can! Hah!");
+    connection.write("Say: Catch me if you can! Hah!");
   } else if (key === '5') {
-    console.log("Say: I'm hannnngry");
+    connection.write("Say: I'm hannnngry");
   }
 };
 
 const setupInput = function() {
+  connection = conn;
+  
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
