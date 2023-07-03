@@ -11,6 +11,16 @@ const handleUserInput = function(key) {
     console.log("Move: down");
   } else if (key === 'd' || key === 'D') {
     console.log("Move: right");
+  } else if (key === '1') {
+    console.log("Say: Hello");
+  } else if (key === '2') {
+    console.log("Say: How are you doing?");
+  } else if (key === '3') {
+    console.log("Say: Oh no, you got me!");
+  } else if (key === '4') {
+    console.log("Say: Catch me if you can! Hah!");
+  } else if (key === '5') {
+    console.log("Say: I'm hannnngry");
   }
 };
 
