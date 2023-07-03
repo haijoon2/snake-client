@@ -34,7 +34,7 @@ const handleUserInput = function(key) {
   }
 };
 
-const setupInput = function() {
+const setupInput = function(conn) {
   connection = conn;
   
   const stdin = process.stdin;
