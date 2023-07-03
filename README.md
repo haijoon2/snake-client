@@ -20,7 +20,7 @@ Before you can run this client, you will need to be running the server side whic
 - Follow steps inside the snek server repo to run the server side.
 - Run the development snake client using the `node play.js` command.
 - Use WASD keys to move up, left, down or right.
-- Use 1 or 2 to send messages to other players in the game.
+- Use 1 to 5 to send messages to other players in the game.
   - 1 : Hey
   - 2 : How are you doing?
   - 3 : Oh no, you got me!
